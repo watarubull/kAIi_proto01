@@ -3,15 +3,9 @@
 --------------------------------------------------------*/
 body {
   overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   margin: 0;
@@ -33,8 +27,7 @@ body {
   font-size: 1em;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header, footer, section, article, aside, nav,
@@ -58,7 +51,6 @@ img {
 a, a:visited {
   color: #000;
   text-decoration: none;
-  -webkit-transition: opacity .4s;
   transition: opacity .4s;
 }
 
@@ -67,7 +59,6 @@ a, a:visited {
 }
 
 .hover {
-  -webkit-transition: opacity .4s;
   transition: opacity .4s;
   cursor: pointer;
 }
@@ -79,21 +70,11 @@ a:hover, .hover:hover {
 /* 基本
 --------------------------------------------------------*/
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .flex.half > * {
@@ -101,27 +82,19 @@ a:hover, .hover:hover {
 }
 
 .flex.align-stretch {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
 }
 
 .flex.align-item-c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .flex.single.center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .flex.tri {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -153,10 +126,7 @@ a:hover, .hover:hover {
 }
 
 .flex.column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .inner {
@@ -192,8 +162,7 @@ a:hover, .hover:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .txt.txt-just {
@@ -260,15 +229,9 @@ a:hover, .hover:hover {
 }
 
 .btn > * {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 264px;
   height: 60px;
   padding: 0 1em;
@@ -285,27 +248,16 @@ a:hover, .hover:hover {
 }
 
 .btn-frame01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 240px;
   height: 60px;
   border: solid 1px #FFF;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
   opacity: 1;
 }
@@ -316,16 +268,13 @@ a:hover, .hover:hover {
 }
 
 .send-btn {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   display: block;
   width: 200px;
   height: 45px;
   color: #FFF;
   background-color: transparent;
   border: solid 1px #FFF;
-  -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
   opacity: 1;
 }
@@ -336,27 +285,16 @@ a:hover, .hover:hover {
 }
 
 .link-btn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 45px;
   color: #FFF;
   background-color: transparent;
   border: solid 1px #FFF;
-  -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
   opacity: 1;
 }
@@ -367,6 +305,7 @@ a:hover, .hover:hover {
 }
 
 .device-wrap {
+  overflow: hidden;
   position: relative;
   width: 100%;
   max-width: 375px;
@@ -382,6 +321,10 @@ a:hover, .hover:hover {
   border-bottom: solid 1px #707070;
   font-weight: bold;
   letter-spacing: 0.06em;
+}
+
+#page-header .inner {
+  padding: 0 16px;
 }
 
 #page-header .logo {
@@ -408,135 +351,63 @@ main {
 }
 
 .map-area .kaii-obj {
+  display: none;
   position: absolute;
   top: 20%;
   right: 10%;
 }
 
 .map-area .kaii-obj .walk {
-  -webkit-animation: walk 15s ease infinite;
-          animation: walk 15s ease infinite;
+  animation: walk 15s ease infinite;
 }
 
 .map-area .kaii-obj .tap {
-  -webkit-animation: fluffy1 3s ease infinite;
-          animation: fluffy1 3s ease infinite;
+  animation: fluffy1 3s ease infinite;
   cursor: pointer;
-}
-
-@-webkit-keyframes fluffy1 {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  5% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  20% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-  }
-  25% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  30% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-  }
-  50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
 }
 
 @keyframes fluffy1 {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   5% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   10% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   20% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    transform: translateY(-15px);
   }
   25% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   30% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    transform: translateY(-15px);
   }
   50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes walk {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  25% {
-    -webkit-transform: translate(-100%, 100%);
-            transform: translate(-100%, 100%);
-  }
-  50% {
-    -webkit-transform: translate(0, 200%);
-            transform: translate(0, 200%);
-  }
-  75% {
-    -webkit-transform: translate(50%, 100%);
-            transform: translate(50%, 100%);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes walk {
   0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
   25% {
-    -webkit-transform: translate(-100%, 100%);
-            transform: translate(-100%, 100%);
+    transform: translate(-100%, 100%);
   }
   50% {
-    -webkit-transform: translate(0, 200%);
-            transform: translate(0, 200%);
+    transform: translate(0, 200%);
   }
   75% {
-    -webkit-transform: translate(50%, 100%);
-            transform: translate(50%, 100%);
+    transform: translate(50%, 100%);
   }
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -549,32 +420,20 @@ main {
   top: 50%;
   left: 50%;
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 375px;
   height: 667px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .map-area .kaii-obj .kaii-info .info-inner {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 80%;
   height: 80%;
   padding: 30px 16px;
@@ -588,15 +447,9 @@ main {
 }
 
 .map-area .kaii-obj .kaii-info .info-inner .face {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 120px;
   height: 120px;
   margin: 24px auto;
@@ -610,15 +463,9 @@ main {
 }
 
 .map-area .kaii-obj .kaii-info .info-inner .origin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
 }
 
@@ -630,9 +477,7 @@ main {
 
 .map-area .kaii-obj .kaii-info .info-inner .episode {
   overflow-y: scroll;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 1em;
   margin-top: 16px;
   border: solid 2px #707070;
@@ -658,9 +503,7 @@ main {
   top: 0;
   left: 50%;
   width: 60px;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
-  -webkit-transition: ease 0.4s;
+  transform: translate(-50%, -70%);
   transition: ease 0.4s;
   opacity: 1;
 }
@@ -668,6 +511,137 @@ main {
 .controll-area .add-btn:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.post-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 48px 16px 16px;
+  color: #1a1a1a;
+  background-color: #FFF;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  transition: ease 0.4s;
+  transform: translateY(calc(100% + 30px));
+}
+
+.post-area.open {
+  transform: translateY(0);
+}
+
+.post-area .close-btn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  transition: ease 0.4s;
+  opacity: 1;
+}
+
+.post-area .close-btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.post-area .heading {
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.post-area .post-form dt {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.post-area .post-form dd + dt {
+  margin-top: 1em;
+}
+
+.post-area .post-form dd > * {
+  appearance: none;
+  display: block;
+  width: 100%;
+  border: solid 2px #707070;
+}
+
+.post-area .post-form dd input {
+  height: 32px;
+}
+
+.post-area .post-form dd textarea {
+  height: 240px;
+}
+
+.post-area .post-form .submit input {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #e83828;
+  transition: ease 0.4s;
+  opacity: 1;
+}
+
+.post-area .post-form .submit input:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.result-post-area {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.result-post-area .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  padding: 30px 16px;
+  text-align: center;
+  color: #1a1a1a;
+  background-color: #FFF;
+  transform: translate(-50%, -50%);
+}
+
+.result-post-area .box .comment {
+  margin-bottom: 1em;
+}
+
+.result-post-area .box .name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.result-post-area .box .face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 24px auto;
+  border: solid 4px #707070;
+  border-radius: 100%;
+}
+
+.result-post-area .box .face img {
+  max-width: 80%;
+  max-height: 80%;
 }
 
 #key .btns {
@@ -690,21 +664,11 @@ main {
 }
 
 .input-box dl div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .input-box dl div + div {
@@ -720,9 +684,7 @@ main {
 }
 
 .input-box dl dd input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   display: block;
   width: 100%;
   height: 30px;
@@ -777,9 +739,7 @@ main {
 }
 
 .input-area .box .input-list dd input, .input-area .box .input-list dd textarea {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   display: block;
   width: 100%;
   height: 30px;
@@ -822,8 +782,6 @@ main {
 }
 
 .epi-list li .status {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
 }

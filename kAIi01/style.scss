@@ -249,6 +249,7 @@ a:hover,.hover:hover{opacity: 0.5;}
   }
 }
 .device-wrap{
+  overflow: hidden;
   position: relative;
   width: 100%;
   max-width: 375px;
@@ -263,6 +264,9 @@ a:hover,.hover:hover{opacity: 0.5;}
   border-bottom: solid 1px $bg-gray02;
   font-weight: bold;
   letter-spacing: 0.06em;
+  .inner{
+    padding: 0 16px;
+  }
   .logo{
     font-size: 18px;
   }
@@ -283,6 +287,7 @@ main{
   background-repeat: no-repeat;
   background-position: top center;
   .kaii-obj{
+    display: none;
     position: absolute;
     top: 20%;
     right: 10%;
@@ -397,7 +402,116 @@ main{
     @include hoverBase;
   }
 }
+.post-area{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 48px 16px 16px;
+  color: $black;
+  background-color: $white;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  transition: ease 0.4s;
+  transform: translateY(calc(100% + 30px));
+  &.open{
+    transform: translateY(0);
+  }
+  .close-btn{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60px;
+    transform: translate(-50%,-50%);
+    @include hoverBase;
+  }
+  .heading{
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .post-form{
+    dt{
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+    dd{
+      &+dt{
+        margin-top: 1em;
+      }
+      &>*{
+        appearance: none;
+        display: block;
+        width: 100%;
+        border: solid 2px $bg-gray02;
+      }
+      input{
+        height: 32px;
+      }
+      textarea{
+        height: 240px;
+      }
+    }
+    .submit{
+      input{
+        appearance: none;
+        display: block;
+        width: 100%;
+        height: 48px;
+        margin-top: 16px;
+        border: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $white;
+        background-color: #e83828;
+        @include hoverBase;
+      }
+    }
+  }
+}
 
+.result-post-area{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    padding: 30px 16px;
+    text-align: center;
+    color: $black;
+    background-color: $white;
+    transform: translate(-50%,-50%);
+    .comment{
+      margin-bottom: 1em;
+    }
+    .name{
+      text-align: center;
+      font-weight: bold;
+    }
+    .face{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      margin: 24px auto;
+      border: solid 4px $bg-gray02;
+      border-radius: 100%;
+      img{
+        max-width: 80%;
+        max-height: 80%;
+      }
+    }
+  }
+}
 
 #key{
   .btns{
